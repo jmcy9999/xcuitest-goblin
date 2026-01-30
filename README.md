@@ -29,7 +29,7 @@ That's it. In under a second, you get a full analysis report.
 
 ## Example Output
 
-```
+```text
 ✓ Analysis complete!
 
 Results:

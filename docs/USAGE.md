@@ -103,6 +103,7 @@ xcuitest-goblin analyze /path/to/project --config ./strict-thresholds.json
 ```
 
 Without this option, the tool searches these locations:
+
 1. `./thresholds.json`
 2. `./config/thresholds.json`
 3. `~/.xcuitest-goblin/thresholds.json`
@@ -116,6 +117,7 @@ xcuitest-goblin analyze /path/to/project --verbose
 ```
 
 Output includes:
+
 - Step-by-step progress indicators
 - Counts for each analysis phase
 - Timing information
@@ -136,7 +138,7 @@ Note: `--verbose` and `--quiet` are mutually exclusive.
 
 ### Standard Output (Default)
 
-```
+```text
 Analyzing iOS project: /Users/dev/MyApp
 Output directory: /Users/dev/MyApp/analysis
 
@@ -155,7 +157,7 @@ Output: /Users/dev/MyApp/analysis
 
 ### Verbose Output
 
-```
+```text
 Analyzing iOS project: /Users/dev/MyApp
 Output directory: /Users/dev/MyApp/analysis
 
