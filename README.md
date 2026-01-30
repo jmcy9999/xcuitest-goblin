@@ -4,6 +4,8 @@
 
 A zero-dependency CLI tool that analyzes your iOS XCUITest suite and surfaces actionable recommendations to keep your tests healthy.
 
+> **📊 [View Sample Report](docs/assets/sample_report.md)** — See what Test Goblin finds in a real project
+
 ## Why Use This?
 
 Your test suite grows organically. Tests get added, renamed, skipped, forgotten. Before you know it:
@@ -119,7 +121,6 @@ Requires Python 3.10+. No external dependencies.
 
 - [Usage Guide](docs/USAGE.md) — CLI options, examples, configuration
 - [HTML Report Spec](docs/HTML_REPORT_AC.md) — Complete HTML report acceptance criteria
-- [Sample Report](docs/assets/sample_report.html) — Example analysis output
 
 ## License
 
