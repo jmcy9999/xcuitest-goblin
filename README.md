@@ -1,10 +1,10 @@
-# Test Goblin
+# XCUITest Goblin
 
 **Find orphaned tests, inconsistent naming, overused identifiers, bloated test files, and more — in under 1 second.**
 
 A zero-dependency CLI tool that analyzes your iOS XCUITest suite and surfaces actionable recommendations to keep your tests healthy.
 
-> **📊 [View Sample Report](docs/assets/sample_report.md)** — See what Test Goblin finds in a real project
+> **📊 [View Sample Report](docs/assets/sample_report.md)** — See what XCUITest Goblin finds in a real project
 
 ## Why Use This?
 
@@ -21,8 +21,8 @@ This tool finds these issues instantly and tells you exactly what to fix.
 ## Quick Start
 
 ```bash
-pip install test-goblin
-test-goblin analyze /path/to/your/ios-project
+pip install xcuitest-goblin
+xcuitest-goblin analyze /path/to/your/ios-project
 ```
 
 That's it. In under a second, you get a full analysis report.
@@ -62,7 +62,7 @@ Add to your CI pipeline to catch test hygiene issues before they merge:
 ```yaml
 - name: Analyze Test Suite
   run: |
-    test-goblin analyze . --quiet
+    xcuitest-goblin analyze . --quiet
     # Fails if critical issues found (coming soon)
 ```
 
@@ -84,7 +84,7 @@ Customize what triggers recommendations via `thresholds.json`:
 | `test_plans` | `orphaned_tests_threshold` | 0 | Any test not in a plan |
 
 ```bash
-test-goblin analyze /path/to/project --config ./my-thresholds.json
+xcuitest-goblin analyze /path/to/project --config ./my-thresholds.json
 ```
 
 See [Configuration Guide](docs/USAGE.md#configuration) for all options.
@@ -104,14 +104,14 @@ See [Configuration Guide](docs/USAGE.md#configuration) for all options.
 ### From PyPI (recommended)
 
 ```bash
-pip install test-goblin
+pip install xcuitest-goblin
 ```
 
 ### From Source
 
 ```bash
-git clone https://github.com/jmcy9999/test-goblin.git
-cd test-goblin
+git clone https://github.com/jmcy9999/xcuitest-goblin.git
+cd xcuitest-goblin
 pip install -e .
 ```
 
@@ -121,6 +121,12 @@ Requires Python 3.10+. No external dependencies.
 
 - [Usage Guide](docs/USAGE.md) — CLI options, examples, configuration
 - [HTML Report Spec](docs/HTML_REPORT_AC.md) — Complete HTML report acceptance criteria
+
+## Try It Out
+
+Give XCUITest Goblin a spin on your project and let us know what you think! We'd love your feedback — open an [issue](https://github.com/jmcy9999/xcuitest-goblin/issues) with suggestions, bug reports, or feature requests.
+
+**More features coming soon:** CI integration with exit codes, test coverage analysis, flaky test detection, and more.
 
 ## License
 

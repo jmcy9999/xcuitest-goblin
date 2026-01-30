@@ -9,8 +9,8 @@ import statistics
 from pathlib import Path
 from typing import Any, Dict, List, Optional
 
-from test_goblin.analyzers.base_analyzer import BaseAnalyzer
-from test_goblin.config import get_threshold
+from xcuitest_goblin.analyzers.base_analyzer import BaseAnalyzer
+from xcuitest_goblin.config import get_threshold
 
 
 class TestInventoryAnalyzer(BaseAnalyzer):

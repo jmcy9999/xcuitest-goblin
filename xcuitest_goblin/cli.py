@@ -1,4 +1,4 @@
-"""Command-line interface for iOS Test Optimizer.
+"""Command-line interface for XCUITest Goblin.
 
 Provides commands for analyzing iOS XCUITest projects and generating reports.
 """
@@ -9,18 +9,18 @@ import time
 from pathlib import Path
 from typing import List, Optional
 
-from test_goblin import __version__
-from test_goblin.analyzers import (
+from xcuitest_goblin import __version__
+from xcuitest_goblin.analyzers import (
     AccessibilityAnalyzer,
     ScreenGraphAnalyzer,
 )
-from test_goblin.analyzers.test_inventory_analyzer import (
+from xcuitest_goblin.analyzers.test_inventory_analyzer import (
     TestInventoryAnalyzer,
 )
-from test_goblin.analyzers.test_plan_analyzer import TestPlanAnalyzer
-from test_goblin.reporters import JSONReporter, HTMLReporter
-from test_goblin.reporters.json_reporter import create_metadata
-from test_goblin.config import load_config
+from xcuitest_goblin.analyzers.test_plan_analyzer import TestPlanAnalyzer
+from xcuitest_goblin.reporters import JSONReporter, HTMLReporter
+from xcuitest_goblin.reporters.json_reporter import create_metadata
+from xcuitest_goblin.config import load_config
 
 # Exit codes
 EXIT_SUCCESS = 0
@@ -38,24 +38,24 @@ def create_parser() -> argparse.ArgumentParser:
         Configured ArgumentParser instance
     """
     parser = argparse.ArgumentParser(
-        prog="ios-test-optimizer",
+        prog="xcuitest-goblin",
         description="Analyze and optimize iOS XCUITest projects",
         formatter_class=argparse.RawDescriptionHelpFormatter,
         epilog="""
 Examples:
   # Analyze a project with default settings
-  ios-test-optimizer analyze /path/to/project
+  xcuitest-goblin analyze /path/to/project
 
   # Analyze with custom output directory
-  ios-test-optimizer analyze /path/to/project --output ./reports/
+  xcuitest-goblin analyze /path/to/project --output ./reports/
 
   # Generate only JSON output
-  ios-test-optimizer analyze /path/to/project --format json
+  xcuitest-goblin analyze /path/to/project --format json
 
   # Verbose mode for detailed progress
-  ios-test-optimizer analyze /path/to/project --verbose
+  xcuitest-goblin analyze /path/to/project --verbose
 
-For more information, visit: https://github.com/yourusername/ios-test-optimizer
+For more information, visit: https://github.com/jmcy9999/xcuitest-goblin
         """,
     )
 

@@ -1,6 +1,6 @@
-# Test Goblin - Usage Guide
+# XCUITest Goblin - Usage Guide
 
-This document provides detailed information on using the Test Goblin command-line tool.
+This document provides detailed information on using the XCUITest Goblin command-line tool.
 
 ## Table of Contents
 
@@ -15,7 +15,7 @@ This document provides detailed information on using the Test Goblin command-lin
 ### Main Command
 
 ```bash
-test-goblin [--version] [--help] <command> [<args>]
+xcuitest-goblin [--version] [--help] <command> [<args>]
 ```
 
 ### Global Options
@@ -32,7 +32,7 @@ test-goblin [--version] [--help] <command> [<args>]
 Analyzes an iOS project to extract test inventory, accessibility IDs, test plans, and screen navigation patterns.
 
 ```bash
-test-goblin analyze <project_path> [OPTIONS]
+xcuitest-goblin analyze <project_path> [OPTIONS]
 ```
 
 **Arguments:**
@@ -60,7 +60,7 @@ By default, the tool auto-detects the XCUITest directory by searching for direct
 
 ```bash
 # Project with non-standard test directory
-test-goblin analyze /path/to/project --tests-path /path/to/project/MyCustomTests
+xcuitest-goblin analyze /path/to/project --tests-path /path/to/project/MyCustomTests
 ```
 
 ### `--output`
@@ -69,10 +69,10 @@ Specifies where to write the analysis results. The directory will be created if 
 
 ```bash
 # Output to custom directory
-test-goblin analyze /path/to/project --output ~/Desktop/my-analysis/
+xcuitest-goblin analyze /path/to/project --output ~/Desktop/my-analysis/
 
 # Output to relative path
-test-goblin analyze /path/to/project --output ./reports/2024-01/
+xcuitest-goblin analyze /path/to/project --output ./reports/2024-01/
 ```
 
 ### `--format`
@@ -84,13 +84,13 @@ Controls which output formats are generated. Available formats:
 
 ```bash
 # JSON only (for CI/CD integration)
-test-goblin analyze /path/to/project --format json
+xcuitest-goblin analyze /path/to/project --format json
 
 # Markdown only (for documentation)
-test-goblin analyze /path/to/project --format html
+xcuitest-goblin analyze /path/to/project --format html
 
 # Both formats (default)
-test-goblin analyze /path/to/project --format json,html
+xcuitest-goblin analyze /path/to/project --format json,html
 ```
 
 ### `--config`
@@ -99,20 +99,20 @@ Loads custom thresholds from a JSON configuration file:
 
 ```bash
 # Use project-specific thresholds
-test-goblin analyze /path/to/project --config ./strict-thresholds.json
+xcuitest-goblin analyze /path/to/project --config ./strict-thresholds.json
 ```
 
 Without this option, the tool searches these locations:
 1. `./thresholds.json`
 2. `./config/thresholds.json`
-3. `~/.test-goblin/thresholds.json`
+3. `~/.xcuitest-goblin/thresholds.json`
 
 ### `--verbose`
 
 Enables detailed progress logging:
 
 ```bash
-test-goblin analyze /path/to/project --verbose
+xcuitest-goblin analyze /path/to/project --verbose
 ```
 
 Output includes:
@@ -127,7 +127,7 @@ Suppresses all progress output (useful for scripting):
 
 ```bash
 # Silent operation for scripts
-test-goblin analyze /path/to/project --quiet && echo "Analysis complete"
+xcuitest-goblin analyze /path/to/project --quiet && echo "Analysis complete"
 ```
 
 Note: `--verbose` and `--quiet` are mutually exclusive.

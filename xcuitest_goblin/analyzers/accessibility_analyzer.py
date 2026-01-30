@@ -10,7 +10,7 @@ from collections import defaultdict
 from pathlib import Path
 from typing import Dict, Optional, Set
 
-from test_goblin.analyzers.base_analyzer import BaseAnalyzer
+from xcuitest_goblin.analyzers.base_analyzer import BaseAnalyzer
 
 
 class AccessibilityAnalyzer(BaseAnalyzer):

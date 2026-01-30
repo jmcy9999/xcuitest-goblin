@@ -7,7 +7,7 @@ from datetime import datetime, timezone
 from pathlib import Path
 from typing import Any, Dict, List, Optional
 
-from test_goblin.config import get_threshold
+from xcuitest_goblin.config import get_threshold
 
 
 class HTMLReporter:

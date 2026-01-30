@@ -8,7 +8,7 @@ import json
 from datetime import datetime, timezone
 from typing import Any, Dict, List, Optional
 
-from test_goblin.reporters.base_reporter import BaseReporter
+from xcuitest_goblin.reporters.base_reporter import BaseReporter
 
 
 class JSONReporter(BaseReporter):

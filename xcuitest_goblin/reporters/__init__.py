@@ -4,13 +4,13 @@ This package contains reporter classes that generate various output formats
 from analyzer results.
 """
 
-from test_goblin.reporters.base_reporter import BaseReporter
-from test_goblin.reporters.json_reporter import JSONReporter
-from test_goblin.reporters.html_reporter import (
+from xcuitest_goblin.reporters.base_reporter import BaseReporter
+from xcuitest_goblin.reporters.json_reporter import JSONReporter
+from xcuitest_goblin.reporters.html_reporter import (
     HTMLReporter,
     generate_html_report,
 )
-from test_goblin.reporters.markdown_reporter import (
+from xcuitest_goblin.reporters.markdown_reporter import (
     MarkdownReporter,
     generate_markdown_report,
 )

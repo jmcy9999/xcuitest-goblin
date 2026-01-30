@@ -9,7 +9,7 @@ from datetime import datetime
 from pathlib import Path
 from typing import Any, Dict, List, Optional
 
-from test_goblin.config import get_threshold
+from xcuitest_goblin.config import get_threshold
 
 
 class MarkdownReporter:
