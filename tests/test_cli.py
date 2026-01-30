@@ -36,12 +36,17 @@ def test_parser_default_format():
 def test_parser_custom_options():
     """Test custom options parsing."""
     parser = create_parser()
-    args = parser.parse_args([
-        "analyze", "/tmp/test",
-        "--output", "/custom/output",
-        "--format", "json",
-        "--verbose"
-    ])
+    args = parser.parse_args(
+        [
+            "analyze",
+            "/tmp/test",
+            "--output",
+            "/custom/output",
+            "--format",
+            "json",
+            "--verbose",
+        ]
+    )
     assert args.output == "/custom/output"
     assert args.format == "json"
     assert args.verbose is True

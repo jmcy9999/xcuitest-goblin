@@ -20,6 +20,7 @@ def test_default_config_has_sections():
 def test_get_config_returns_config_object():
     """Test that get_config returns a Config object."""
     from xcuitest_goblin.config import Config
+
     config = get_config()
     assert isinstance(config, Config)
     # Config should have thresholds property that returns a dict
