@@ -5,6 +5,10 @@
 
 ---
 
+<img width="805" height="681" alt="Screenshot 2026-02-02 at 03 12 51" src="https://github.com/user-attachments/assets/d8746e46-ed37-49f1-b490-9ad2ea76f6fa" />
+
+---
+
 ## Executive Summary
 
 | Issue | Count | Severity |
