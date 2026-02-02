@@ -73,6 +73,12 @@ Add to your CI pipeline to catch test hygiene issues before they merge:
 
 Keep your test suite healthy with every PR.
 
+## 🚀 XCUITest Goblin Pro (Coming Soon)
+   
+   Track test health over time, get CI guardrails, and team dashboards.
+   
+   [Join the waitlist →](https://xcuitest-testgoblin.netlify.app)
+
 ## Configurable Thresholds
 
 Customize what triggers recommendations via `thresholds.json`:
